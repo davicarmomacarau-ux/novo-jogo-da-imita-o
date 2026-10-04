@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Da Máquina de Turing à Computação Quântica</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #030712;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: min(1400px, 100%);
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 0 30px rgba(0, 140, 255, 0.25),
+        0 0 80px rgba(130, 50, 255, 0.15);
+      animation: aparecer 1.5s ease;
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+
+      background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255,255,255,0.12),
+        transparent 80%
+      );
+
+      transform: translateX(-100%);
+      animation: brilho 5s infinite;
+    }
+
+    .container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease;
+    }
+
+    .container:hover img {
+      transform: scale(1.025);
+    }
+
+    .linha {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 4%;
+      height: 3px;
+
+      background: linear-gradient(
+        90deg,
+        #00d9ff,
+        #2563eb,
+        #9333ea,
+        #ff4ecd
+      );
+
+      box-shadow:
+        0 0 10px #00d9ff,
+        0 0 25px #9333ea;
+
+      animation: pulsar 2s infinite alternate;
+    }
+
+    .particula {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: white;
+      box-shadow:
+        0 0 10px #00d9ff,
+        0 0 25px #9333ea;
+      animation: viajar 6s linear infinite;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes brilho {
+      0% {
+        transform: translateX(-120%);
+      }
+
+      45%, 100% {
+        transform: translateX(120%);
+      }
+    }
+
+    @keyframes pulsar {
+      from {
+        opacity: 0.6;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes viajar {
+      from {
+        left: 5%;
+      }
+
+      to {
+        left: 94%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Imagem do artigo -->
+    <img
+      src="assets/turing-quantum.png"
+      alt="Da Máquina de Turing à Computação Quântica"
+    >
+
+    <!-- Linha temporal animada -->
+    <div class="linha"></div>
+
+    <!-- Partícula viajando pelo tempo -->
+    <div class="particula"></div>
+
+  </div>
+
+</body>
+</html>
