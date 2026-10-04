@@ -8,9 +8,9 @@
 
 <br>
 
-![Alan Turing](https://img.shields.io/badge/Alan_Turing-Teoria_da_Computação-2563eb?style=for-the-badge)
+![Alan Turing](https://img.shields.io/badge/Alan%20Turing-Teoria%20da%20Computação-2563eb?style=for-the-badge)
 ![Computação Quântica](https://img.shields.io/badge/Computação-Quântica-7c3aed?style=for-the-badge)
-![Artigo Técnico](https://img.shields.io/badge/Artigo-Técnico-111827?style=for-the-badge)
+![Artigo Técnico](https://img.shields.io/badge/Projeto-Artigo%20Técnico-111827?style=for-the-badge)
 
 </div>
 
@@ -18,46 +18,33 @@
 
 ## 📚 Sobre o projeto
 
-Este projeto apresenta um estudo técnico sobre a relação entre a **Teoria da Computação de Alan Turing** e a **Computação Quântica**.
+Este projeto apresenta um estudo técnico sobre a relação entre os fundamentos estabelecidos por **Alan Turing** e o desenvolvimento da **Computação Quântica**.
 
-O artigo analisa como os conceitos de computabilidade e complexidade computacional evoluíram desde a Máquina de Turing até os modernos modelos de processamento quântico.
+A Máquina de Turing foi um dos modelos matemáticos fundamentais para a compreensão da computação. Décadas depois, a computação quântica introduziu um novo paradigma de processamento baseado em princípios da mecânica quântica.
 
-## 🔬 Principais temas
-
-- Máquina de Turing
-- Máquina de Turing Universal
-- Computabilidade
-- Complexidade computacional
-- Bits e qubits
-- Superposição
-- Interferência quântica
-- Emaranhamento
-- Algoritmo de Shor
-- Algoritmo de Grover
-- Classe BQP
-- Criptografia pós-quântica
+O objetivo deste estudo é analisar essa evolução e compreender o que permanece dos fundamentos da computação clássica quando passamos para sistemas quânticos.
 
 ---
 
-## 💻 Da computação clássica à quântica
+## 🧠 Alan Turing e a Teoria da Computação
+
+Em 1936, Alan Turing apresentou o conceito de uma máquina abstrata capaz de manipular símbolos seguindo regras bem definidas.
+
+A Máquina de Turing pode ser representada, de forma simplificada, por:
+
+- Uma fita potencialmente infinita;
+- Um cabeçote de leitura e escrita;
+- Um conjunto de estados;
+- Um alfabeto de símbolos;
+- Uma função de transição.
+
+Apesar de sua simplicidade, esse modelo tornou possível estudar matematicamente o conceito de algoritmo e estabelecer limites para aquilo que pode ou não ser computado.
+
+---
+
+## ⚙️ A Máquina de Turing
+
+Uma Máquina de Turing pode ser descrita matematicamente por uma estrutura do tipo:
 
 ```text
-Alan Turing
-     |
-     v
-Máquina de Turing
-     |
-     v
-Computadores clássicos
-     |
-     v
-Bits e portas lógicas
-     |
-     v
-Qubits
-     |
-     v
-Superposição e interferência
-     |
-     v
-Computação Quântica
+M = (Q, Σ, Γ, δ, q₀, q_accept, q_reject)
