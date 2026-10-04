@@ -4,7 +4,7 @@
 
 ### O mesmo objetivo. Novos paradigmas.
 
-<img src="assets/turing-quantum-animated.gif" alt="Da Máquina de Turing à Computação Quântica" width="100%">
+<img src="./assets/turing-quantum.png" alt="Da Máquina de Turing à Computação Quântica" width="100%">
 
 <br>
 
@@ -16,19 +16,19 @@
 
 ---
 
-## 📚 Sobre o projeto
+# 📚 Sobre o projeto
 
 Este projeto apresenta um estudo técnico sobre a relação entre os fundamentos estabelecidos por **Alan Turing** e o desenvolvimento da **Computação Quântica**.
 
-A Máquina de Turing foi um dos modelos matemáticos fundamentais para a compreensão da computação. Décadas depois, a computação quântica introduziu um novo paradigma de processamento baseado em princípios da mecânica quântica.
+A Máquina de Turing foi um dos modelos matemáticos fundamentais para a compreensão da computação. Décadas depois, a computação quântica introduziu um novo paradigma de processamento baseado nos princípios da mecânica quântica.
 
-O objetivo deste estudo é analisar essa evolução e compreender o que permanece dos fundamentos da computação clássica quando passamos para sistemas quânticos.
+O objetivo deste estudo é analisar essa evolução e compreender como os fundamentos da computação se relacionam com os novos modelos de processamento quântico.
 
 ---
 
-## 🧠 Alan Turing e a Teoria da Computação
+# 🧠 Alan Turing e a Teoria da Computação
 
-Em 1936, Alan Turing apresentou o conceito de uma máquina abstrata capaz de manipular símbolos seguindo regras bem definidas.
+Em 1936, **Alan Turing** apresentou o conceito de uma máquina abstrata capaz de manipular símbolos seguindo regras bem definidas.
 
 A Máquina de Turing pode ser representada, de forma simplificada, por:
 
@@ -42,9 +42,9 @@ Apesar de sua simplicidade, esse modelo tornou possível estudar matematicamente
 
 ---
 
-## ⚙️ A Máquina de Turing
+# ⚙️ A Máquina de Turing
 
-Uma Máquina de Turing pode ser descrita matematicamente por uma estrutura do tipo:
+Uma Máquina de Turing pode ser descrita matematicamente por:
 
 ```text
 M = (Q, Σ, Γ, δ, q₀, q_accept, q_reject)
